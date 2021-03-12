@@ -1,21 +1,17 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <?php
+<?php
+  require_once('template_header.php');
+?>
+
+<header>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</header>
+
+
+<?php
         require_once('template_header.php');
-    ?>
-
-
-<body> 
-          <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-
-        <nav class="menu">
-            <ul>
-            <li><a href="index.php">Accueil</a></li>
-            <li><a href="cv.php">CV</a></li>
-            <li><a href="projets.php">Projets</a></li>
-            </ul>
-            </nav>
-        </div>
+?>
+    
+<body>
         <div class="resume">
             <div class="resume_left">
               <div class="resume_profile">
@@ -205,8 +201,10 @@
         </div>
       </div>
     </div>
-    <?php
-        require_once('template_footer.php');
-    ?>
 </body>
+
+<?php
+        require_once('template_footer.php');
+?>
+
 </html>
