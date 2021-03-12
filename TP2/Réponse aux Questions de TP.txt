@@ -1,0 +1,5 @@
+====================================================================== TP2:(PHP)
+===================================Partie 3:
+
+4- il faut un seule fichier template_header.php
+5- cette tranformation est intéressante pour factoriser le code html qui est dupliqué dans les page html.

@@ -11,9 +11,9 @@
 
     <nav class="menu">
         <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="index.php">Accueil</a></li>
+        <li><a href="cv.php">CV</a></li>
+        <li><a href="projets.php">Projets</a></li>
         </ul>
         </nav>
         
@@ -24,6 +24,8 @@
     <p> Etudiant ingénieur en double diplômes, diplômé dans les domaines du Génie Logiciel (Software Engineering) et Management des Systèmes de l'Information de l'Ecole Nationale Supérieure des Mines Rabat-Maroc, et actuellement, je suis étudiant en (M1) à l'IMT LILLE DOUAI.</p>
     </article>
 
-    <footer>Site réalisé en HTML5</footer>
+    <?php
+        require_once('template_footer.php');
+    ?>
 </body>
 </html>
