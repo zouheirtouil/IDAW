@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Mon Site Pro ZT</title>
-	<link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-</head>
+<html lang="fr">
+    <?php
+        require_once('template_header.php');
+    ?>
 
 
-<body>
+<body> 
+          <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
         <nav class="menu">
             <ul>
             <li><a href="index.html">Accueil</a></li>

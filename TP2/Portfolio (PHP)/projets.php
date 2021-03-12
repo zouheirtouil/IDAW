@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Mon Site ZT</title>
-  </head>
+    <?php
+        require_once('template_header.php');
+    ?>
+
   <body>
       <header>
           <h1>Projets</h1>>
