@@ -9,7 +9,8 @@
                 // idPage titre
                 'accueil' => array( 'Accueil' ),
                 'cv' => array( 'Cv' ),
-                'projets' => array('Mes Projets')
+                'projets' => array('Mes Projets'),
+                'contact' => array('Contacts')
             );
             echo "<nav class=\"menu\"><ul>";
             foreach($mymenu as $pageId => $pageParameters) {
