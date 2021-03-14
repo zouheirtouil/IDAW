@@ -13,6 +13,6 @@
     <h2>gmail</h2>
     <a href="zouhiertouil@gmail.com" target="_blank">send me a message</a>
     <h2>Téléphone</h2>
-    <p> +33 6 45 46 49 57</p>
+    <p> +33 (6) 45 46 49 57</p>
 
 </article>
