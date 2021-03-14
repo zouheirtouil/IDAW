@@ -1,5 +1,11 @@
- <?php
-    require_once('template_header.php');
+<?php
+    require_once("template_header.php");
+    require_once("template_menu.php");
+
+    $currentPageId = 'accueil';
+    if(isset($_GET['page'])) {
+        $currentPageId = $_GET['page'];
+    }
 ?>
 
 <header>
@@ -7,17 +13,20 @@
 </header>
 
 <?php
-        require_once('template_menu.php');
-        renderMenuToHTML('index');
+    renderMenuToHTML($currentPageId);
 ?>
     
-<img src="Images/photo.PNG" alt="Mon image">
 
-<article> 
-    <h2>Qui suis-je?</h2>
-    <p> Etudiant ingénieur en double diplômes, diplômé dans les domaines du Génie Logiciel (Software Engineering) et Management des Systèmes de l'Information de l'Ecole Nationale Supérieure des Mines Rabat-Maroc, et actuellement, je suis étudiant en (M1) à l'IMT LILLE DOUAI.</p>
-</article>
 
+<section class="corps">
+    <?php
+    $pageToInclude = $currentPageId . ".php";
+    if(is_readable($pageToInclude))
+        require_once($pageToInclude);
+    else
+        require_once("error.php");
+    ?>
+</section>
 
 <?php
         require_once('template_footer.php');
