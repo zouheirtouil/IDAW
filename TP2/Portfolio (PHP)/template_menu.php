@@ -1,17 +1,10 @@
+<div id="banner1">
+
+</div>
+
+
 <?php
         function renderMenuToHTML($currentPageId){
-           /* echo "<nav class=\"menu\">
-            <ul>
-            <li><a href=\"index.php\">Accueil</a></li>
-            <li><a href=\"cv.php\">Cv</a></li>
-            <li><a href=\"projets.php\">Mes Projets</a></li>
-            </ul>
-            </nav>";
-
-            */
-
-
-            // un tableau qui d\'efinit la structure du site
             $mymenu = array(
                 // idPage titre
                 'index' => array( 'Accueil' ),
@@ -20,9 +13,18 @@
             );
             echo "<nav class=\"menu\"><ul>";
             foreach($mymenu as $pageId => $pageParameters) {
-                echo "<li><a href='$pageId.php'><span>$pageParameters[0]</span></a></li>";
-                }
+                echo "<li><a ";
+
+                if($currentPageId == $pageId)
+                    echo "id=\"currantpage\"";  
+                echo "href='$pageId.php'><span>$pageParameters[0]</span></a></li>";
+                
+            }
             echo  "</ul></nav>";
 
      }
 ?>
+
+<div id="banner2">
+
+</div>

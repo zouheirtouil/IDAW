@@ -3,7 +3,7 @@
 ?>
 
 <header>
-    <h1>TOUIL Zouheir :  ETUDIANT DOUBLE DIPLOME IMT LILLE DOUAI</h1>
+    <h1 id="titre"> TOUIL Zouheir :  ETUDIANT DOUBLE DIPLOME IMT LILLE DOUAI</h1>
 </header>
 
 <?php

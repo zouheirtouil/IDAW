@@ -4,15 +4,15 @@
 ?>
 
 
-
+<header>
+    <h1 id="titre">Mes Projets</h1>
+</header>
 <?php
         require_once('template_menu.php');
-        renderMenuToHTML('index');
+        renderMenuToHTML('projets');
 ?>
 
-<header>
-    <h1>Projets</h1>
-</header>
+
   
 <article> 
     <h2>Projets Profesionnelles</h2>

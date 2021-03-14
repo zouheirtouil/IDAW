@@ -3,13 +3,15 @@
 ?>
 
 <header>
+    <link rel="stylesheet" href="style.css" type="text/css"
+                media="screen" title="default" charset="utf-8" />
     <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </header>
 
 
 <?php
         require_once('template_menu.php');
-        renderMenuToHTML('index');
+        renderMenuToHTML('cv');
 
 ?>
     
