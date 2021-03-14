@@ -7,7 +7,7 @@
         function renderMenuToHTML($currentPageId){
             $mymenu = array(
                 // idPage titre
-                'index' => array( 'Accueil' ),
+                'accueil' => array( 'Accueil' ),
                 'cv' => array( 'Cv' ),
                 'projets' => array('Mes Projets')
             );
@@ -17,7 +17,7 @@
 
                 if($currentPageId == $pageId)
                     echo "id=\"currantpage\"";  
-                echo "href='$pageId.php'><span>$pageParameters[0]</span></a></li>";
+                echo "href= index.php?page=$pageId>$pageParameters[0]</a></li>";
                 
             }
             echo  "</ul></nav>";
