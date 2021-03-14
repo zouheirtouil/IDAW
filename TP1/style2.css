@@ -1,9 +1,9 @@
 
 
 #banner1{
-    display:block;
+    display:flexbox;
     background-color: rgb(41, 214, 226);
-    height: 50px;
+    height: 30px;
     width: 100%;
 }
 
@@ -42,13 +42,53 @@
     color:black
 }
 
-.menu ul li a:hover{
+.menu ul li a:hover, #menu ul li a:focus{
+    text-decoration: underline;
     color:white;
     background-color: #271370;
 }
+
+.menu ul #currentpage a{
+    color:white;
+    background-color: #271370;
+}
+
+
 #banner2{
-    display:block;
+    display:flexbox;
     background-color: rgb(41, 214, 226);
-    height: 50px;
+    height: 30px;
     width: 100%;
 }
+
+#titre{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    top: 25px;
+    margin:0;
+    text-align: center;
+
+}
+#footer{
+    text-align: center;
+    display: flexbox;
+    background-color: rgb(41, 214, 226) ;
+    height: 30px;
+}
+
+#footer p{
+    color:black;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+}
+
+.article{
+    display: flexbox;
+    margin:auto;
+    width: 90%;
+}
+
+
+
