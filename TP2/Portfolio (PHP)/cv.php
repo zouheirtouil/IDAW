@@ -1,6 +1,3 @@
-<?php
-  require_once('template_header.php');
-?>
 
 <header>
     <link rel="stylesheet" href="style.css" type="text/css"
@@ -9,11 +6,6 @@
 </header>
 
 
-<?php
-        require_once('template_menu.php');
-        renderMenuToHTML('cv');
-
-?>
     
 <body>
         <div class="resume">
@@ -207,7 +199,5 @@
     </div>
 </body>
 
-<?php
-        require_once('template_footer.php');
-?>
+
 
