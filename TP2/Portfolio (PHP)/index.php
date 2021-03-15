@@ -6,11 +6,16 @@
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
     }
+
+    if(isset($_GET['lang'])) {
+        $_GET['lang'] = "fr"; }
+    else{
+        if(isset($_GET['lang']) && !empty($_GET['lang']))
+            $lang = $_GET['lang'];
+        }
 ?>
 
-<header>
-    <h1 id="titre"> TOUIL Zouheir :  ETUDIANT DOUBLE DIPLOME IMT LILLE DOUAI</h1>
-</header>
+
 
 <?php
     renderMenuToHTML($currentPageId);
