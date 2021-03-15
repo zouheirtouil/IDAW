@@ -6,13 +6,10 @@
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
     }
-
-    if(isset($_GET['lang'])) {
-        $_GET['lang'] = "fr"; }
-    else{
-        if(isset($_GET['lang']) && !empty($_GET['lang']))
+        
+    if(isset($_GET['lang']) && !empty($_GET['lang']))
             $lang = $_GET['lang'];
-        }
+        
 ?>
 
 

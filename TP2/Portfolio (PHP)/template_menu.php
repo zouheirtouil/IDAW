@@ -12,16 +12,17 @@
                 'cvfr' => array( 'Cv' ),
                 'projetsfr' => array('Mes Projets'),
                 'contactfr' => array('Contacts'),
-                'langfr' => array('English')
+                'accueilen' => array('English')
             );
             echo "<nav class=\"menu\"><ul>";
             foreach($mymenu as $pageId => $pageParameters) {
                 echo "<li><a ";
                 if($currentPageId == $pageId)
                     echo "id=\"currantpage\"";  
-                    echo "href=index.php?page=$pageId>$pageParameters[0]</a></li>";
+                    echo "href=index.php?page=$pageId&?lang=$lang>$pageParameters[0]</a></li>";
                 }
                 echo  "</ul></nav>";
+            
 
      }
 ?>
