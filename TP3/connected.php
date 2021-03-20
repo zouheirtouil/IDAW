@@ -1,4 +1,5 @@
-/*
+
+
 <?php
 echo "Voici le login :";
 echo $_POST['login'];
@@ -6,7 +7,7 @@ echo '\n Voici le mots de passe :      ' ;
 echo $_POST['password'];
 ?>
 
-<
+
 <?php
     // on simule une base de données
     $users = array(
