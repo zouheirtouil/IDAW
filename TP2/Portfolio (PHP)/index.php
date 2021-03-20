@@ -3,19 +3,27 @@
     require_once("template_menu.php");
 
     $currentPageId = 'accueil';
+
+    if(isset($_GET['lang'])){
+            $currentlang = $_GET['lang'];
+    } else{
+        $currentlang = 'fr';
+    }
+
+
+    
     if(isset($_GET['page'])) {
         $currentPageId = $_GET['page'];
     }
         
-    if(isset($_GET['lang']) && !empty($_GET['lang']))
-            $lang = $_GET['lang'];
+    
         
 ?>
 
 
 
 <?php
-    renderMenuToHTML($currentPageId);
+    renderMenuToHTML($currentPageId,$currentlang);
 ?>
     
 
