@@ -34,7 +34,7 @@
             <div class="form-group row">
                 <label for="inputNom" class="col-sm-2 col-form-label">Nom*</label>
                 <div class="col-sm-3">
-                <input type="text" class="form-control" id="inputNom" >
+                <input type="text" class="form-control" id="inputNom" required="required">
                 </div>
             </div>
 
@@ -53,6 +53,20 @@
             </div>
 
             <div class="form-group row">
+                <label for="inputaimecours" class="col-sm-2 col-form-label">Jadore le cours</label>
+                <div class="col-sm-3">
+                <input type="radio" class="form-control" id="inputaimecours" >
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="inputremarque" class="col-sm-2 col-form-label">Remarques</label>
+                <div class="col-sm-3">
+                <input type="text" class="form-control" id="inputremarque" >
+                </div>
+            </div>
+
+            <div class="form-group row">
                 <span class="col-sm-2"></span>
                 <div class="col-sm-2">
                     <button type="submit" class="btn btn-primary form-control">Submit</button>
@@ -66,7 +80,9 @@
         let nom = $("#inputNom").val();
         let prenom = $("#inputPrenom").val();
         let datenaissance = $("#inputDateNaissance").val();
-        $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${prenom}</td><td>${datenaissance}</td><td></td><td></td><td></td><td></td></tr>`);
+        let aimecours = $("#inputaimecours").val();
+        let remarques = $("#inputremarque").val();
+        $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${prenom}</td><td>${datenaissance}</td><td>${aimecours}</td><td>${remarques}</td><td></td><td></td></tr>`);
         }
         </script>
     </body>
