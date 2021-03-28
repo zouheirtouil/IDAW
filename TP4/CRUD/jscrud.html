@@ -74,26 +74,32 @@
             </div>
         </form>
         <script>
-        function onFormSubmit() {
-        // prevent the form to be sent to the server
-        event.preventDefault();
-        let nom = $("#inputNom").val();
-        let prenom = $("#inputPrenom").val();
-        let datenaissance = $("#inputDateNaissance").val();
-        let aimecours = $("#inputaimecours").prop('checked') ? "Oui": "Non";
-        let remarques = $("#inputremarque").val();
-        $("#studentsTableBody").append(`
-                    <tr>    
-                        <td>${nom}</td>
-                        <td>${prenom}</td>
-                        <td>${datenaissance}</td>
-                        <td>${aimecours}</td>
-                        <td>${remarques}</td>
-                        <td>
-                            <button onclick="Edit();"> Edit </button>
-                        </td>
-                    </tr>`);
-        }
+            function Edit(){
+                
+            }
+            function onFormSubmit() {
+            // prevent the form to be sent to the server
+            event.preventDefault();
+
+            let newStudent = {};
+
+            newStudent.nom = $("#inputNom").val();
+            newStudent.prenom = $("#inputPrenom").val();
+            newStudent.datenaissance = $("#inputDateNaissance").val();
+            newStudent.aimecours = $("#inputaimecours").prop('checked') ? "Oui": "Non";
+            newStudent.remarques = $("#inputremarque").val();
+            $("#studentsTableBody").append(`
+                        <tr>    
+                            <td>${nom}</td>
+                            <td>${prenom}</td>
+                            <td>${datenaissance}</td>
+                            <td>${aimecours}</td>
+                            <td>${remarques}</td>
+                            <td>
+                                <button onclick="Edit();"> Edit </button>
+                            </td>
+                        </tr>`);
+            }
         </script>
     </body>
 </html>
