@@ -77,6 +77,9 @@
             function Edit(){
                 
             }
+            let studentMaxId = 1;
+            let students = [];
+
             function onFormSubmit() {
             // prevent the form to be sent to the server
             event.preventDefault();
@@ -88,13 +91,18 @@
             newStudent.datenaissance = $("#inputDateNaissance").val();
             newStudent.aimecours = $("#inputaimecours").prop('checked') ? "Oui": "Non";
             newStudent.remarques = $("#inputremarque").val();
+            newStudent.Id = studentMaxId;
+            studentMaxId++;
+
+            students.push(newStudent);
+            
             $("#studentsTableBody").append(`
                         <tr>    
-                            <td>${nom}</td>
-                            <td>${prenom}</td>
-                            <td>${datenaissance}</td>
-                            <td>${aimecours}</td>
-                            <td>${remarques}</td>
+                            <td>${newStudent.nom}</td>
+                            <td>${newStudent.prenom}</td>
+                            <td>${newStudent.datenaissance}</td>
+                            <td>${newStudent.aimecours}</td>
+                            <td>${newStudent.remarques}</td>
                             <td>
                                 <button onclick="Edit();"> Edit </button>
                             </td>
