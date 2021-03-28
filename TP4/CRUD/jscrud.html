@@ -55,7 +55,7 @@
             <div class="form-group row">
                 <label for="inputaimecours" class="col-sm-2 col-form-label">Jadore le cours</label>
                 <div class="col-sm-3">
-                <input type="radio" class="form-control" id="inputaimecours" >
+                <input type="checkbox" class="form-control" id="inputaimecours" >
                 </div>
             </div>
 
@@ -80,9 +80,19 @@
         let nom = $("#inputNom").val();
         let prenom = $("#inputPrenom").val();
         let datenaissance = $("#inputDateNaissance").val();
-        let aimecours = $("#inputaimecours").val();
+        let aimecours = $("#inputaimecours").prop('checked') ? "Oui": "Non";
         let remarques = $("#inputremarque").val();
-        $("#studentsTableBody").append(`<tr><td>${nom}</td><td>${prenom}</td><td>${datenaissance}</td><td>${aimecours}</td><td>${remarques}</td><td></td><td></td></tr>`);
+        $("#studentsTableBody").append(`
+                    <tr>    
+                        <td>${nom}</td>
+                        <td>${prenom}</td>
+                        <td>${datenaissance}</td>
+                        <td>${aimecours}</td>
+                        <td>${remarques}</td>
+                        <td>
+                            <button onclick="Edit();"> Edit </button>
+                        </td>
+                    </tr>`);
         }
         </script>
     </body>
