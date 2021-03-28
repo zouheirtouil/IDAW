@@ -73,8 +73,23 @@
                 </div>
             </div>
         </form>
+
+
+
         <script>
-            function Edit(){
+
+
+
+            function formValue(nom,prenom,dateNaissance,aime,remarque){
+                $("#inputNom").val(nom);
+                $("#inputPrenom").val(prenom);
+                $("#inputDateNaissance").val(dateNaissance);
+                $("#inputaimecours").prop('checked',aime);
+                $("#inputremarque").val(remarque);
+
+
+            }
+            function Edit(Id){
                 
             }
             let studentMaxId = 1;
@@ -95,7 +110,8 @@
             studentMaxId++;
 
             students.push(newStudent);
-            
+             
+
             $("#studentsTableBody").append(`
                         <tr>    
                             <td>${newStudent.nom}</td>
@@ -104,10 +120,13 @@
                             <td>${newStudent.aimecours}</td>
                             <td>${newStudent.remarques}</td>
                             <td>
-                                <button onclick="Edit();"> Edit </button>
+                                <button onclick="Edit(${newStudent.id});"> Edit </button>
                             </td>
                         </tr>`);
+                formValue("","","","","");
+                       
             }
+            
         </script>
     </body>
 </html>
